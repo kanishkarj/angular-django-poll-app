@@ -1,0 +1,7 @@
+
+  <h3 *ngIf="question != undefined">{{question.question}}</h3>
+  <h4 *ngIf="question != undefined">{{question.name}}</h4>
+  <ul *ngIf="question != undefined" class="nav nav-pills nav-stacked">
+    <li (click)="onSelect(choice)" *ngFor="let choice of question.choices"><a>{{choice.name}}</a></li>
+  </ul>
+

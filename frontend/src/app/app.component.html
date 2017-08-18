@@ -1,0 +1,13 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a routerLink="/" class="navbar-brand" href="#">Poll</a>
+    </div>
+    <ul class="nav navbar-nav">
+    <li><a routerLink="/create" routerLinkActive="active">create</a></li>            
+    </ul>
+  </div>
+</nav>    
+<div class="container">
+  <router-outlet (SelectQuestion)="onSelectVideo($event)" ></router-outlet>            
+</div>

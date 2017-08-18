@@ -1,0 +1,27 @@
+<form>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input  [(ngModel)]="question.name" [ngModelOptions]="{standalone: true}" type="name" class="form-control" id="name">
+  </div>
+  <div class="form-group">
+    <label for="question">Question:</label>
+    <input  [(ngModel)]="question.question" [ngModelOptions]="{standalone: true}" type="question" class="form-control" id="question">
+  </div>
+ 
+  <div class="form-group">
+    <button (click)="addChoice()" class="btn btn-default">Add choices</button>
+  </div>
+  <div class="form-group">
+    <ul class="nav nav-pills nav-stacked">
+      <li *ngFor="let choice of question.choices">
+          <div class="form-group">
+              <label for="name">Name:</label>
+              <input [(ngModel)]="choice.name" [ngModelOptions]="{standalone: true}" type="name" class="form-control">
+            </div>
+      </li>
+    </ul>
+  </div>
+  <div class="form-group">
+    <button (click)="submit()" class="btn btn-default">Submit</button>
+  </div>
+</form>

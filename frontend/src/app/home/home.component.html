@@ -1,0 +1,12 @@
+<ul class="nav nav-pills nav-stacked">
+  <li [routerLink]="['/vote', question.id]" *ngFor="let question of questions">
+    <h3><a>{{question.question}}</a></h3>
+    <h5>{{question.name}}</h5>
+    <ul class="nav nav-pills nav-stacked">
+        <li *ngFor="let choice of question.choices">
+            <div>
+                <h6>{{choice.name}}:{{choice.votes}}</h6>  
+            </div> 
+        </li></ul>      
+  </li>
+</ul>
