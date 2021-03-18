@@ -22,7 +22,7 @@ oauthlib==2.0.2
 olefile==0.44
 packaging==16.8
 pacman-mirrors==4.2.0
-Pillow==4.2.1
+Pillow==8.1.1
 ply==3.10
 pycparser==2.18
 pygobject==3.24.1
